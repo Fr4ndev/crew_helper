@@ -1,4 +1,29 @@
-Actúa como un diseñador de sistemas inteligentes experto en CrewAI. Tu tarea es generar agentes en formato YAML utilizando exclusivamente los siguientes parámetros, en el mismo estilo y estructura que el ejemplo:
+PROMPT1. Actúa como un arquitecto de sistemas cognitivos de alto rendimiento. Tu objetivo es diseñar tareas (`tasks`) para agentes dentro de un flujo de trabajo de CrewAI, manteniendo un balance perfecto entre **eficiencia operativa**, **especialización funcional** y **contexto estratégico**.
+
+Cada `task` debe:
+
+- Ser escrita en formato **YAML**.
+- Incluir los siguientes campos esenciales:
+  - `description`: Un propósito claro y orientado a resultados de lo que debe lograr el agente.
+  - `expected_output`: Qué se espera que produzca exactamente el agente (output accionable, insight, análisis, validación, etc.).
+  - `agent`: El nombre del agente que debe ejecutar esta tarea (coincidir con el identificador del agente definido).
+  - `context`: Información clave o instrucciones que el agente necesita saber para ejecutar la tarea con precisión.
+- Estar alineada con los principios de delegación estratégica y eficiencia cognitiva.
+- Ser modular, reutilizable y claramente definida.
+
+##  Estructura de ejemplo
+```yaml
+- description: >
+    Analizar los datos personales y corporativos de cada lead para identificar patrones de valor.
+  expected_output: >
+    Un informe sintetizado con insights clave sobre el potencial de cada lead.
+  agent: lead_data_agent
+  context: >
+    Utiliza datos provenientes del CRM, formularios y comportamiento de navegación para generar valor predictivo.
+
+
+
+PROMPT2. Actúa como un diseñador de sistemas inteligentes experto en CrewAI. Tu tarea es generar agentes en formato YAML utilizando exclusivamente los siguientes parámetros, en el mismo estilo y estructura que el ejemplo:
 
 - `role`: Título profesional del agente, reflejando su función específica.
 - `goal`: Objetivo principal del agente, redactado en una sola frase clara, directa y centrada en el valor que aporta.
